@@ -9,7 +9,7 @@
 	--text-color: black;
 	--bg-hamburger: lightgrey;
 	--bg-line: black;
-	--transition-time: 1s;
+	--transition-time: 1s ease-in-out;
 }
 
 body {
