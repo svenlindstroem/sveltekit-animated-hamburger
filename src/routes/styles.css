@@ -1,0 +1,84 @@
+@import '@fontsource/fira-mono';
+:root {
+	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	font-family: var(--font-body);
+	color: var(--color-text);
+	--bg-color: white;
+	--text-color: black;
+	--bg-hamburger: lightgrey;
+	--bg-line: black;
+	--transition-time: 1s;
+}
+
+body {
+	min-height: 100vh;
+	background-size: 100vw 100vh;
+	margin: 0;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color var(--transition-time);
+}
+
+// default no theme or light theme
+html[data-theme='light'],
+html:not([data-theme]) {
+	--bg-color: white;
+	--text-color: black;
+	--bg-hamburger: rgb(18, 18, 18);
+	--bg-line: white;
+}
+
+html[data-theme='dark'] {
+	--bg-color: black;
+	--text-color: white;
+	--bg-hamburger: rgb(18, 18, 18);
+	--bg-line: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	html:not([data-theme]) {
+		--bg-color: black;
+		--text-color: white;
+		--bg-hamburger: rgb(18, 18, 18);
+		--bg-line: white;
+	}
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
