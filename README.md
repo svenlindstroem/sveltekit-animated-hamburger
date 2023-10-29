@@ -1,38 +1,16 @@
-# create-svelte
+# Resizeable Hamburger Menu Button
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Simple animated component for Svelte / SvelteKit with adjustable dimensions and dark and light modes and transitions. When open and <u>not square</u> the component will grow and shrink to available size. Does not require any dependecies.
 
-## Creating a project
+## Check it out
 
-If you're seeing this, you've probably already done this step. Congrats!
+Preview either on [Vercel](https://sveltekit-animated-hamburger.vercel.app)
+or
+[Svelte Repl](https://svelte.dev/repl/b43ad27a5d874f9fa84465c9f8fe759b?version=4.2.2)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Install
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# clone, cd into directory and run
+npm install
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
