@@ -78,6 +78,8 @@
 		Checkout the <a href="https://svelte.dev/repl/b43ad27a5d874f9fa84465c9f8fe759b?version=4.2.2"
 			>Svelte REPL</a
 		>
+		or the
+		<a href="https://github.com/svenlindstroem/sveltekit-animated-hamburger">Github Repo</a>
 	</section>
 </main>
 
